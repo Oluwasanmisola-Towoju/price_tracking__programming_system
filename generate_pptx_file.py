@@ -1,3 +1,4 @@
+#creates a PowerPoint report based on detected product price changes and then generates a price list that can easily be printed and displayed
 from detect_price_change import detect_price_change
 from pptx import Presentation
 from pptx.util import Inches, Pt

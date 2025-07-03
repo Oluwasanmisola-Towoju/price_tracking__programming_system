@@ -1,3 +1,4 @@
+#for test run analysis acting as a comparism to item data to test code
 import json
 
 with open("products.json", "r", encoding="utf-8") as file:

@@ -1,3 +1,4 @@
+#makes the API call so access token can be retrieved. 
 import requests
 
 CLIENT_ID = "1000.S633QD79EFHG0548HVS7Y127TIBUOW"

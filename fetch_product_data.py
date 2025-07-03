@@ -1,3 +1,7 @@
+#Fetches product inventory data from Zoho Inventory API.
+#retrieves product details such as SKU, name, and rate, and saves the data
+#to a respective json for further processing and analysis.
+
 import requests
 import json
 from configurations import HEADERS
