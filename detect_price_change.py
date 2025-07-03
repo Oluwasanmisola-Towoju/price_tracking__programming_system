@@ -1,5 +1,4 @@
-"""
-compares old and new product prices to identify any changes.
+"""compares old and new product prices to identify any changes.
 It highlights unusual price shifts that exceed a certain threshold and
 generates a summary report. If major changes are found, it also displays
 an alert notification to the user.

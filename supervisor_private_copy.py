@@ -9,11 +9,10 @@ import json
 import os
 
 
-def load_data(filename="price_changes.json"):
-    with open(filename, 'r', encoding='utf-8') as f:
-        return json.load(f)
-
-def create_pptx(data, output_file="supervisor_price_dashboard.pptx", threshold=30):
+def create_pptx():
+    with open("price_changes.json", 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    threshold = 30
     prs = Presentation()
 
     
@@ -83,13 +82,9 @@ def create_pptx(data, output_file="supervisor_price_dashboard.pptx", threshold=3
         for run in paragraph.runs:
             run.font.name = "Segoe Print"
 
-    
-    prs.save(output_file)
-    print(f"PowerPoint dashboard saved as {output_file}")
+    prs.save("supervisor_price_dashboard.pptx")
+    os.startfile("supervisor_price_dashboard.pptx")
 
 
 if __name__ == "__main__":
-    data = load_data("price_changes.json")
-    create_pptx(data)
-
-os.startfile("supervisor_price_dashboard.pptx")
+    create_pptx()
