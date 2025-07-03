@@ -1,0 +1,23 @@
+# Ignore Python cache files and folders
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore logs
+*.log
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore JSON and PowerPoint files (local data & reports)
+*.json
+*.pptx
+
+# Ignore macOS system files (if applicable)
+.DS_Store
+
