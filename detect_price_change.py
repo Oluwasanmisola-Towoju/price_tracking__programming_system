@@ -43,7 +43,7 @@ def detect_price_change(threshold=30):
     with open("price_changes.json", "w", encoding="utf-8") as output:
         dump(price_changes, output, indent=4)
 
-    print(f"✅ Tracked {len(price_changes)} price changes.")
+    print(f"Tracked {len(price_changes)} price changes.")
     print(f"🚨 Found {len(price_anomaly_noticed)} anomalies.")
 
     if price_anomaly_noticed:
